@@ -5,6 +5,10 @@ import './Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 
+import images from '../../constants/images'
+
+
+
 
 const Navbar = () =>
 {
@@ -13,18 +17,17 @@ const Navbar = () =>
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        logo
-        {/* <img src="" alt="" /> */}
+        <img src={images.hali} alt="logo" />
       </div>
       <ul className='app__navbar-links'>
         <li className='p__opensans'><a href="#home">home</a></li>
-        <li className='p__opensans'><a href="#home">about</a></li>
-        <li className='p__opensans'><a href="#home">reviews</a></li>
-        <li className='p__opensans'><a href="#home">contact</a></li>
+        <li className='p__opensans'><a href="#about">about</a></li>
+        <li className='p__opensans'><a href="#reviews">reviews</a></li>
+        <li className='p__opensans'><a href="#contact">contact</a></li>
       </ul>
 
       <div className='app__navbar-book'>
-        <a href="#book" className='p__opensans'>Book Now</a>
+        <button>book now</button>
       </div>
 
       

@@ -6,11 +6,35 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  font-family: 'Roboto', sans-serif;
 
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+
+  background: linear-gradient(83deg, #F9E0F7, #BAF2E9);
+  background-size: 400% 400%;
+  animation: GradientAnimation 31s ease infinite;
+ 
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.css-selector {
+    background: linear-gradient(95deg, #f0d9e1, #ffffff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    -o-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+}
+
+@keyframes GradientAnimation {
+0%{background-position: 0% 53%}
+50%{background-position: 100% 47%}
+100%{background-position:0% 53%}
 }

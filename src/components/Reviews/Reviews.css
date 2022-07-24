@@ -1,8 +1,8 @@
 .reviews{
-    height: 70vh;
+    height: 75vh;
     overflow: hidden;
-    border: 1px solid black;
     display: flex;
+    /* flex-direction: column; */
 }
 
 .card {
@@ -11,7 +11,7 @@
     width:30rem;
     height: 30rem;
     margin:3rem 3rem 2rem 3rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
 }
 
 
@@ -23,8 +23,8 @@
     /* margin:auto; */
     margin: 4rem auto;
     overflow: hidden;
-    
 }
+
 .user-img img{
     width:200px;
     margin-top: -50px;
@@ -36,4 +36,44 @@
     border: 1px solid black;
     margin:20px;
     padding: 50px 30px;
+}
+
+@media screen and (max-width: 1350px) {
+    .card{
+        margin:1rem 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .reviews{
+        margin-top:5rem;
+        flex-direction: column ;
+        height: 120vh;
+        overflow: hidden;
+    }
+
+    .card{
+        height: 20rem;
+        width:25rem;
+        margin:1rem 3rem;
+    }
+
+
+    .user-img{
+        border: 1px solid black;
+        width: 60px;
+        height:60px;
+        border-radius: 50%;
+        /* margin:auto; */
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+
+    .user-img img{
+        width: 150px;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
 }

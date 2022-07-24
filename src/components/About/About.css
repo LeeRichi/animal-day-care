@@ -2,7 +2,7 @@
     height: 60vh;
     /* border: 1px solid black; */
     display: flex;
-
+    overflow: hidden;
     margin:5rem 15rem;
 }
 
@@ -13,9 +13,9 @@
 
 
 .subHeading{
-    /* border: 1px solid black; */
     width:45rem;
     margin:auto 2rem;
+    margin-top: 7rem;
 }
 
 .sub{
@@ -31,4 +31,42 @@
 
 
 
+
+
+.about__pto{
+    /* border:1px solid black; */
+    display: flex;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.pto{
+    padding: 5px;
+}
+
+.pto img{
+    height:100%;
+    /* border: 1px solid black; */
+    width:100%;
+    padding:0px;
+}
+
+@media screen and (max-width: 1350px) {
+.main{
+    min-width: 15rem;
+    min-height: 25rem;
+    margin:0px 10px -100px 25px;
+
+}
+.about{
+    flex-direction: column;
+    height:100vh;
+    margin:0px 10px 10px 20px;
+}
+
+.subHeading{
+    width:80%;
+}
+
+}
 
