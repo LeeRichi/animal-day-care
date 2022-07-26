@@ -1,7 +1,8 @@
 .reviews{
-    height: 75vh;
+    height: 70vh;
     overflow: hidden;
     display: flex;
+    padding-top: 5rem;
     /* flex-direction: column; */
 }
 

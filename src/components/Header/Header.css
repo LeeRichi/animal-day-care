@@ -54,6 +54,12 @@
     .app__header{
         padding-top:10rem;
     }
+
+    .app__header-h1{
+        margin-bottom: -10px;
+    }
+
+  
 }
 
 

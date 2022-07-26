@@ -77,7 +77,6 @@
     transition: 0.5s ease;
     /* padding-top:50%; */
     flex-direction: column;
-    z-index: 15;
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {

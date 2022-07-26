@@ -19,13 +19,15 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="header" element={<Header />} />
+  <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/" element={<Header />} />
         <Route path="About" element={<About />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
 );
 

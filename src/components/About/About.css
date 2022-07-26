@@ -1,9 +1,10 @@
 .about {
-    height: 60vh;
+    height: 90vh;
     /* border: 1px solid black; */
     display: flex;
     overflow: hidden;
-    margin:5rem 15rem;
+    margin:0rem 10rem;
+    padding-top: 10rem;
 }
 
 .main{
@@ -60,7 +61,7 @@
 }
 .about{
     flex-direction: column;
-    height:100vh;
+    height:120vh;
     margin:0px 10px 10px 20px;
 }
 

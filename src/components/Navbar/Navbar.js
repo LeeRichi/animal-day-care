@@ -7,6 +7,7 @@ import { FaWindowClose } from 'react-icons/fa';
 
 import images from '../../constants/images'
 
+import { Link } from 'react-router-dom'
 
 
 
@@ -17,17 +18,21 @@ const Navbar = () =>
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.hali} alt="logo" />
+        <Link to=''>
+          <img src={images.hali} alt="logo" />
+        </Link>
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__opensans'><a href="#home">home</a></li>
-        <li className='p__opensans'><a href="#about">about</a></li>
-        <li className='p__opensans'><a href="#reviews">reviews</a></li>
-        <li className='p__opensans'><a href="#contact">contact</a></li>
+        <li className='p__opensans'><Link to="/">home</Link></li>
+        <li className='p__opensans'><Link to="/about">about</Link></li>
+        <li className='p__opensans'><Link to="/reviews">reviews</Link></li>
+        <li className='p__opensans'><Link to="/contact">contact</Link></li>
       </ul>
 
       <div className='app__navbar-book'>
-        <button>book now</button>
+        <Link to="/contact">
+          <button>book now</button>
+        </Link>
       </div>
 
       
@@ -39,11 +44,11 @@ const Navbar = () =>
         <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
           <FaWindowClose color='#000000' fontSize={27} className="overlay__close" onClick={ () => setToggleMenu(false) } />
           <ul className="app__navbar-smallscreen_links">
-            <li><a href="#home" onClick={ () => {} }>Home</a></li>
-            <li><a href="#about" onClick={ () => {} }>about</a></li>
-            <li><a href="#menu" onClick={ () => {} }>reviews</a></li>
+            <li><Link to="/" onClick={ () => setToggleMenu(false) }>Home</Link></li>
+            <li><Link to="/About" onClick={ () => setToggleMenu(false) }>about</Link></li>
+            <li><Link to="/reviews" onClick={ () => setToggleMenu(false) }>reviews</Link></li>
             
-            <li><a href="#contact" onClick={ () => {} }>Contact</a></li>
+            <li><Link to="/contact" onClick={ () => setToggleMenu(false) }>Contact</Link></li>
           </ul>
         </div>
       )}

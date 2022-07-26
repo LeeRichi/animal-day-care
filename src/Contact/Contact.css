@@ -1,6 +1,7 @@
 .contact{
-    height: 90vh;
+    height: 100vh;
     display: flex;
+    padding-top:5rem;
 }
 
 .contact__title{
@@ -10,16 +11,16 @@
   height: 40px;
   position:absolute;
   margin-left: 5rem;
-  margin-top:5rem;
+  margin-top:3rem;
+  z-index:-1;
 }
 
 .contact h1{
     display: flex;
-    text-align: center;
-    justify-content: center;
     margin-left: 5rem;
     height: 50px;
     position:absolute;
+    margin-top:-3rem;
 }
 
 .contact__title img{
@@ -120,12 +121,12 @@ textarea {
 
 @media screen and (max-width: 1350px) {
   .contact{
-    height: 140vh;
+    height: 150vh;
   }
 
   form{
     flex-direction: column;
-    height: 120vh;
+    height: 140vh;
   }
 
   .flex__contact{
@@ -166,4 +167,6 @@ textarea {
     margin-left: -4rem;
     width: 200%
   }
+
+
 }
