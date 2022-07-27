@@ -52,38 +52,38 @@
 .app__navbar-smallscreen div{
     width: 1px;
     height: 30px;
-    background-color: var(--color-grey);
 }
 
 
 .app__navbar-smallscreen{ 
     display: none;
     margin: 0 2.5rem;
-
+    cursor: pointer;
     background-color: transparent;
     width: 5%;
 }
 
 
 .app__navbar-smallscreen_overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 100vw;
     height: 100vh;
-    background: white;
+    background-color: white ;
     backdrop-filter: blur(50px);
     border-radius: 10px;
     transition: 0.5s ease;
-    /* padding-top:50%; */
     flex-direction: column;
+    /* overflow: hidden;  */
 }
+
+
+
 
 .app__navbar-smallscreen_overlay .overlay__close {
     font-size: 27px;
-    color: var(--color-golden);
     cursor: pointer;
-
     position: absolute;
     top: 40px;
     right: 60px;

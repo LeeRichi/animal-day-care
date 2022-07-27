@@ -52,14 +52,20 @@
 
 @media screen and (max-width: 1350px) {
     .app__header{
-        padding-top:10rem;
+        padding-top:150px;
     }
 
     .app__header-h1{
         margin-bottom: -10px;
     }
 
+    .app__wrapper_info img{
+        margin-top: 2rem;
+    }
   
+    .app__wrapper_img{
+        margin-top: 2rem;
+    }
 }
 
 

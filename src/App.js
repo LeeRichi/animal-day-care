@@ -5,6 +5,9 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Reviews from './components/Reviews/Reviews';
 import Contact from './Contact/Contact';
+import navOverlay from './Contact/Contact';
+
+import { useState } from 'react';
 
 import {
   BrowserRouter,
@@ -13,22 +16,34 @@ import {
 } from "react-router-dom";
 
 
-const App = () => (
-  <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      <Reviews />
-      <Contact />
-    {/* <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/" element={<Header />} />
-      <Route path="About" element={<About />} />
-      <Route path="/reviews" element={<Reviews />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes> */}
-      
-  </div>
-)
+const App = () =>
+{
+  
+  const [toggleBar, setToggleBar] = useState(true);
+
+  function handleCount()
+  {
+    setToggleBar(!toggleBar)
+    console.log(toggleBar)
+  }
+
+  return (
+    <>
+      {/* <Navbar /> */}
+      <div className="App">
+        <Navbar toggleBar={toggleBar} setToggleBar={setToggleBar} handleCount={handleCount} />
+        <Header toggleBar={toggleBar} setToggleBar={setToggleBar}/>
+        <About />
+        <Reviews />
+
+        {/* {toggleBar1 && <Contact toggleBar={toggleBar}/>} */}
+        <Contact toggleBar={toggleBar} />
+        {/* <navOverlay /> */}
+      </div>
+    </>
+  )
+
+  
+}
 
 export default App; 

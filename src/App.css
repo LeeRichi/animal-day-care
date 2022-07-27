@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+img{
+  border-radius: 5px;
+}
+
 .app__bg {
   /* background: url('./assets/bg.png'); */
   background-position: center;

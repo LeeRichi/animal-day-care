@@ -9,12 +9,11 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
 import images from '../constants/images';
 
-const Contact = () =>
+const Contact = ({toggleBar}) =>
 {   
+
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
-  console.log(startDate, endDate)
 
   const form = useRef();
   
@@ -38,7 +37,6 @@ const Contact = () =>
       );
   };
 
-
     const selectionRange = {
         startDate: startDate,
         endDate: endDate,
@@ -51,9 +49,9 @@ const Contact = () =>
         setEndDate(ranges.selection.endDate);
     }
 
-
   return (
-    <div className='contact'>      
+    <>
+    <div className='contact'>
       <form action="" ref={form} onSubmit={handleSubmit}>
         <div className='contact__title'>
           <h1 className='contact h1'>chose dates & contact </h1>
@@ -66,8 +64,6 @@ const Contact = () =>
             onChange={handleSelect}
             className='calendar'
             name='startDate'/>
-
-          {/* <img src={images.map} alt="" /> */}
         </div>
 
         <div className='flex__contact'>
@@ -77,17 +73,7 @@ const Contact = () =>
             </textarea>
             <textarea className='special' name="to" id="dates" cols="30" rows="10">
               {endDate}
-            </textarea>
-{/*             
-            <li>
-              <input type="date" name='date' required/>
-            </li>
-            
-            <li>
-              <input type="date" name='date' required/>
-            </li> */}
-        
-           
+            </textarea>        
             
             <li>
               <input type="text" name='name' placeholder='name' required/>
@@ -112,6 +98,8 @@ const Contact = () =>
       </form>
  
     </div>
+ 
+    </>
   )
 }
 
