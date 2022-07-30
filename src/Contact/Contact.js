@@ -11,7 +11,6 @@ import images from '../constants/images';
 
 const Contact = ({toggleBar}) =>
 {   
-
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 

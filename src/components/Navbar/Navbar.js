@@ -17,11 +17,11 @@ const Navbar = ({ toggleBar, setToggleBar, handleCount }) =>
 
   const set = () =>
   {
-    setToggleMenu(!toggleMenu)
+    setToggleMenu((prev) => !prev)
     handleCount();
   }
 
-  console.log(toggleBar)
+
 
 
   return (
@@ -38,12 +38,7 @@ const Navbar = ({ toggleBar, setToggleBar, handleCount }) =>
         <li className='p__opensans'><Link to="/contact">contact</Link></li>
       </ul>
 
-      
-      {/* {toggleMenu && <div className='app__navbar-book'>
-        <Link to="/contact">
-          <button>book now</button>
-        </Link>
-      </div>} */}
+    
 
       <div className='app__navbar-book'>
         <Link to="/contact">
