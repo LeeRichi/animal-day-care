@@ -18,13 +18,13 @@ const About = () =>
             <img src={images.face} className='main' alt="review_img" />
 
             <div className='subHeading'>
-                <SubHeading title='I am Laura' />
+                <SubHeading title='I am Rich' />
                 <p>Do you know the best way to show your skills to employers or potential clients? Stand out from the crowd by presenting a well-digitalized flexible portfolio and get your dream job.</p>
                 <p>Do you know the best way to show your skills to employers or potential clients? Stand out from the crowd by presenting a well-digitalized flexible portfolio and get your dream job.</p>
                 <p>Do you know the best way to show your skills to employers or potential clients? Stand out from the crowd by presenting a well-digitalized flexible portfolio and get your dream job.</p>
                 
                 <div className='about__pto'>
-                    <div className='pto'><img src={images.a} alt="" /></div>
+                    {/* <div className='pto'><img src={images.a} alt="" /></div> */}
                     <div className='pto'><img src={images.b} alt="" /></div>
                     <div className='pto'><img src={images.c} alt="" /></div>
                     <div className='pto'><img src={images.d} alt="" /></div>

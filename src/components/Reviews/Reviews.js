@@ -9,28 +9,28 @@ const Reviews = () => {
 
       <div className='card'>
         <div className='user-img'>
-          <img src={img.face} alt="" />
+          <img src={''} alt="" />
         </div>
         <div className='content'>
-          shes nice
+          comments..
         </div>
       </div>
 
       <div className='card'>
         <div className='user-img'>
-          img
+          {/* img */}
         </div>
         <div className='content'>
-          shes nice
+          comments
         </div>
       </div>
 
       <div className='card'>
         <div className='user-img'>
-          img
+          {/* img */}
         </div>
         <div className='content'>
-          shes nice
+          comments
         </div>
       </div>
 
